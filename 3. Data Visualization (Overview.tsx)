@@ -1,0 +1,9 @@
+<AreaChart data={data}>
+  <Area 
+    type="monotone" 
+    dataKey="performance" 
+    stroke="#2563eb" 
+    fill="url(#colorPerf)" 
+    strokeWidth={3} 
+  />
+</AreaChart>
