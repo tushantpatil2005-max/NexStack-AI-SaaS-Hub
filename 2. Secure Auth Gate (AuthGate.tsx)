@@ -1,0 +1,6 @@
+export default function AuthGate({ children }: { children: React.ReactNode }) {
+  const [user, loading] = useAuthState(auth); // Logic simplified for summary
+
+  if (!user) return <LoginSplash />; 
+  return <AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>;
+}
