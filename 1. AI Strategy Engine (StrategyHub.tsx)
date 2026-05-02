@@ -1,0 +1,10 @@
+// Initializing the AI Engine
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+const model = ai.getGenerativeModel({ model: "gemini-3-flash-preview" });
+
+const generateStrategy = async () => {
+  const response = await model.generateContent(
+    `Generate a comprehensive product strategy based on: ${prompt}.`
+  );
+  setResult(response.response.text());
+};
