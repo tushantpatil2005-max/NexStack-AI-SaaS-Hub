@@ -1,0 +1,6 @@
+File	Purpose
+src/App.tsx	Main application controller, tab-based routing, and high-level view rendering.
+src/lib/firebase.ts	Single source of truth for Firebase services and secure error handling.
+src/components/auth/AuthGate.tsx	Enterprise-style login splash and authesrc/components/strategy/StrategyHub.tsx	The AI generation engine with Firestore persistence "Archiving".
+src/components/dashboard/Overview.tsx	Analytical dashboard with real-time data visualization.
+firestore.rules	Hardened security rules with "Master Gate" identity verification.ntication persistence logic.
